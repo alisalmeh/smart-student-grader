@@ -15,9 +15,6 @@ def get_student_data():
             if len(scores) != 3:
                 print("Please enter exactly 3 scores")
                 continue
-            elif any(score<0 or score>100 for score in scores):
-                print("Scores must be between 0 and 100")
-                continue
                             
             students[name] = scores
 
@@ -25,5 +22,3 @@ def get_student_data():
             print("Invalid input. Only number!")
 
     return students
-
-print(get_student_data())
