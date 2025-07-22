@@ -14,7 +14,7 @@ def apply_grade_modifier(grade, **kwargs):
 
 
 # Calculate average using *args
-def calculate_average(scores):
+def calculate_average(*scores):
     return sum(scores) / len(scores)
 
 
